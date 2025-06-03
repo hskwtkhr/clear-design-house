@@ -1590,7 +1590,7 @@ section {
         width: 200px !important;
         text-align: center !important;
         display: block !important;
-        margin: 0 auto !important;
+        margin: 0 !important;
     }
     
     /* Contactボタンも同じスタイルに統一 */
@@ -1601,7 +1601,7 @@ section {
         width: 200px !important;
         text-align: center !important;
         display: block !important;
-        margin: 0 auto !important;
+        margin: 0 !important;
     }
     
     /* ボタン間の間隔を広げる */
@@ -2114,7 +2114,9 @@ section#home .btn {
         width: 200px !important;
         text-align: center !important;
         display: block !important;
-        margin: 0 auto !important;
+        margin: 0 !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
         box-sizing: border-box !important;
         border-radius: 0 !important;
         text-decoration: none !important;
@@ -2124,6 +2126,7 @@ section#home .btn {
         appearance: none !important;
         opacity: 1 !important;
         visibility: visible !important;
+        align-self: flex-start !important;
     }
 }
 
