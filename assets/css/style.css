@@ -209,10 +209,10 @@ body {
 
 @keyframes loadingParticleFloat {
     0% {
-        transform: translateX(-50%) translateY(-20%);
+        transform: translateY(-20%);
     }
     100% {
-        transform: translateX(50%) translateY(20%);
+        transform: translateY(20%);
     }
 }
 
@@ -436,6 +436,8 @@ body {
     justify-content: center;
     overflow: hidden;
     z-index: 0;
+    transform: translateZ(0);
+    will-change: auto;
 }
 
 .hero-background {
@@ -658,28 +660,28 @@ body {
 
 @keyframes particleFloatFast {
     0% {
-        transform: translateX(-100%);
+        transform: translateY(-10%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateY(10%);
     }
 }
 
 @keyframes particleFloatMedium {
     0% {
-        transform: translateX(-100%) translateY(-10%);
+        transform: translateY(-15%);
     }
     100% {
-        transform: translateX(100%) translateY(10%);
+        transform: translateY(15%);
     }
 }
 
 @keyframes particleFloatSlow {
     0% {
-        transform: translateX(-100%) translateY(5%);
+        transform: translateY(-5%);
     }
     100% {
-        transform: translateX(100%) translateY(-5%);
+        transform: translateY(5%);
     }
 }
 
@@ -1469,28 +1471,28 @@ section {
     /* モバイル版のパーティクルアニメーション範囲調整 */
     @keyframes particleFloatFastMobile {
         0% {
-            transform: translateX(-25vw);
+            transform: translateY(-10%);
         }
         100% {
-            transform: translateX(25vw);
+            transform: translateY(10%);
         }
     }
 
     @keyframes particleFloatMediumMobile {
         0% {
-            transform: translateX(-25vw) translateY(-10%);
+            transform: translateY(-15%);
         }
         100% {
-            transform: translateX(25vw) translateY(10%);
+            transform: translateY(15%);
         }
     }
 
     @keyframes particleFloatSlowMobile {
         0% {
-            transform: translateX(-25vw) translateY(5%);
+            transform: translateY(-5%);
         }
         100% {
-            transform: translateX(25vw) translateY(-5%);
+            transform: translateY(5%);
         }
     }
 
@@ -1517,10 +1519,10 @@ section {
     /* モバイル版のローディングパーティクルアニメーション */
     @keyframes loadingParticleFloatMobile {
         0% {
-            transform: translateX(-25vw) translateY(-20%);
+            transform: translateY(-20%);
         }
         100% {
-            transform: translateX(25vw) translateY(20%);
+            transform: translateY(20%);
         }
     }
 
