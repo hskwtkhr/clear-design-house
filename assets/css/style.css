@@ -1565,14 +1565,16 @@ section {
     /* 代替手段：after擬似要素でContact下線を確実に作成 */
     #contact .section-header::after,
     .contact .section-header::after {
-        content: "" !important;
-        display: block !important;
-        width: 60px !important;
-        height: 2px !important;
-        background: #4facfe !important;
-        margin: 10px auto !important;
-        position: relative !important;
-        z-index: 9999 !important;
+        display: none !important;
+        content: none !important;
+        background: none !important;
+        border: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
     }
     
     /* 念のため全ての.section-lineを通常に戻す */
@@ -1664,6 +1666,25 @@ section {
         border-width: 1px !important;
         opacity: 1 !important;
         visibility: visible !important;
+    }
+    
+    /* モバイル版でContactセクションのサブタイトル下の水色ラインを完全削除 */
+    #contact .section-subtitle::after,
+    .contact .section-subtitle::after,
+    section#contact .section-subtitle::after,
+    .contact .section-subtitle::before,
+    #contact .section-subtitle::before,
+    section#contact .section-subtitle::before {
+        display: none !important;
+        content: none !important;
+        background: none !important;
+        border: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
     }
 }
 
