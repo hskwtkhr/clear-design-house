@@ -817,8 +817,7 @@ body {
     z-index: 3;
     position: relative;
     max-width: 800px;
-    margin: 0 auto;
-    padding: 0 5%;
+    margin-left: 5%;
 }
 
 .hero-title {
@@ -1370,9 +1369,9 @@ section {
     }
     
     .hero-content {
-        text-align: center;
-        margin-left: 0;
-        padding: 0 var(--spacing-md);
+        text-align: left;
+        margin: 0 auto;
+        padding: 0 5%;
     }
     
     .hero-cta {
@@ -1386,6 +1385,10 @@ section {
         gap: var(--spacing-lg);
         max-width: 85%;
         margin: 0 auto;
+    }
+    
+    .works {
+        margin-bottom: var(--spacing-xl);
     }
     
     .works-grid {
@@ -1532,6 +1535,10 @@ section {
     
     .concept-conclusion br {
         display: none;
+    }
+    
+    .concept-conclusion p {
+        font-size: 1.26rem;
     }
     
     /* ContactとWorksセクションの下線を確実に表示 */
@@ -2036,7 +2043,7 @@ html {
 
 .concept-conclusion p {
     color: var(--pure-white);
-    font-size: 1.26rem;
+    font-size: 1.8rem;
     font-weight: 300;
     margin: 0;
     line-height: 1.8;
