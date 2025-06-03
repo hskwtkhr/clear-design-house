@@ -1610,17 +1610,17 @@ section {
         margin-top: var(--spacing-lg) !important;
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
     }
     
-    /* モバイル版ファーストビューの行間を1.5倍に */
+    /* モバイル版ファーストビューの行間を調整 */
     .hero-title {
-        line-height: 1.65 !important;
+        line-height: 1.4 !important;
     }
     
     .hero-subtitle {
-        line-height: 2.7 !important;
+        line-height: 1.8 !important;
     }
     
     /* モバイル版でContact下線を確実に表示 */
