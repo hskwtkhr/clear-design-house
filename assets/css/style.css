@@ -817,7 +817,8 @@ body {
     z-index: 3;
     position: relative;
     max-width: 800px;
-    margin-left: 5%;
+    margin: 0 auto;
+    padding: 0 5%;
 }
 
 .hero-title {
@@ -1126,6 +1127,7 @@ section {
     background: var(--pure-white);
     position: relative;
     z-index: 1;
+    margin-bottom: var(--spacing-xl);
 }
 
 .works-grid {
@@ -1654,27 +1656,6 @@ section {
         opacity: 1 !important;
         visibility: visible !important;
     }
-    
-    /* モバイル版ファーストビューボタンの最終設定 */
-    .hero-cta a,
-    .hero .hero-cta a,
-    section#home .hero-cta a {
-        border: 1px solid var(--pure-white) !important;
-        color: var(--pure-white) !important;
-        background: transparent !important;
-        padding: 1rem 2.5rem !important;
-        font-size: 0.95rem !important;
-        width: 200px !important;
-        text-align: center !important;
-        display: block !important;
-        margin: 0 auto !important;
-        box-sizing: border-box !important;
-        border-radius: 0 !important;
-        text-decoration: none !important;
-        outline: none !important;
-        -webkit-appearance: none !important;
-        appearance: none !important;
-    }
 }
 
 @media (max-width: 480px) {
@@ -2055,7 +2036,7 @@ html {
 
 .concept-conclusion p {
     color: var(--pure-white);
-    font-size: 1.8rem;
+    font-size: 1.26rem;
     font-weight: 300;
     margin: 0;
     line-height: 1.8;
