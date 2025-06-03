@@ -1128,7 +1128,7 @@ section {
     background: var(--pure-white);
     position: relative;
     z-index: 1;
-    margin-bottom: var(--spacing-xl) !important;
+    margin-bottom: calc(var(--spacing-xl) * 2) !important;
 }
 
 .works-grid {
@@ -1390,7 +1390,7 @@ section {
     }
     
     .works {
-        margin-bottom: var(--spacing-xl) !important;
+        margin-bottom: calc(var(--spacing-xl) * 3) !important;
     }
     
     .works-grid {
