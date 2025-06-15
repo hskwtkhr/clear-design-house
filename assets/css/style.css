@@ -820,6 +820,12 @@ body {
     position: relative;
     max-width: 800px;
     margin-left: 5%;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.hero-content.hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 
 .hero-title {
@@ -930,6 +936,12 @@ body {
     opacity: 0;
     animation: fadeInMinimal 1s ease 1.2s forwards;
     z-index: 3;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.scroll-indicator.hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 
 .scroll-line {
@@ -1204,6 +1216,35 @@ section {
     font-weight: 300;
 }
 
+/* Works More Button */
+.works-more {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md) 0;
+}
+
+.btn-more {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    border: 1px solid var(--text-light);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transition: var(--transition);
+    background: transparent;
+}
+
+.btn-more:hover {
+    border-color: var(--accent-cyan-solid);
+    color: var(--accent-cyan-solid);
+    background: rgba(79, 172, 254, 0.05);
+    transform: translateY(-2px);
+}
+
 /* ===== CLIENTS SECTION ===== */
 .clients-section {
     background: var(--light-gray);
@@ -1395,8 +1436,9 @@ section {
     
     .works-grid {
         grid-template-columns: repeat(2, 1fr);
-        height: 60vh;
-        min-height: 400px;
+        height: auto !important;
+        min-height: auto !important;
+        grid-template-rows: auto !important;
     }
     
     .contact-content {
@@ -1533,6 +1575,12 @@ section {
     .concept-content {
         max-width: 85% !important;
         margin: 0 auto !important;
+    }
+    
+    /* Works説明文の幅をconceptと同じにする */
+    .works .section-subtitle {
+        max-width: 85% !important;
+        margin: 0 auto var(--spacing-lg) !important;
     }
     
     .concept-conclusion br {
@@ -1708,8 +1756,9 @@ section {
     }
     
     .works-grid {
-        height: 60vh;
-        min-height: 400px;
+        height: auto !important;
+        min-height: auto !important;
+        grid-template-rows: auto !important;
     }
     
     .work-item {
@@ -1722,6 +1771,13 @@ section {
     
     .work-info p {
         font-size: 0.65rem;
+    }
+    
+    /* モバイル版でmoreボタンのスタイル調整 */
+    .btn-more {
+        font-size: 0.8rem !important;
+        padding: var(--spacing-xs) var(--spacing-lg) !important;
+        letter-spacing: 0.1em !important;
     }
 }
 

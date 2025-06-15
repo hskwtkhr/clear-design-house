@@ -44,6 +44,8 @@ function setupLoadingScreen() {
 function setupNavigation() {
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-link');
+    const heroContent = document.querySelector('.hero-content'); // ヒーローコンテンツを取得
+    const scrollIndicator = document.querySelector('.scroll-indicator'); // スクロールインジケーターを取得
     
     // 初期状態でHomeリンクをアクティブに設定
     navLinks.forEach(link => {
@@ -71,6 +73,32 @@ function setupNavigation() {
             navbar.style.transform = 'translateY(-100%)';
         } else {
             navbar.style.transform = 'translateY(0)';
+        }
+        
+        // ヒーローコンテンツの表示/非表示制御
+        if (heroContent) {
+            if (scrollTop > 200) {
+                heroContent.style.opacity = '0';
+                heroContent.style.visibility = 'hidden';
+                heroContent.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+            } else {
+                heroContent.style.opacity = '1';
+                heroContent.style.visibility = 'visible';
+                heroContent.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+            }
+        }
+        
+        // スクロールインジケーターの表示/非表示制御
+        if (scrollIndicator) {
+            if (scrollTop > 200) {
+                scrollIndicator.style.opacity = '0';
+                scrollIndicator.style.visibility = 'hidden';
+                scrollIndicator.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+            } else {
+                scrollIndicator.style.opacity = '1';
+                scrollIndicator.style.visibility = 'visible';
+                scrollIndicator.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+            }
         }
         
         lastScrollTop = scrollTop;
